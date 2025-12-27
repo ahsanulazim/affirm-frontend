@@ -69,6 +69,21 @@ const Footer = () => {
           </a>
         </nav>
       </div>
+      <div className=" max-w-2lg mx-auto px-5">
+        <footer className="footer sm:footer-horizontal footer-center text-base-content py-5 border-t border-black/50">
+          <aside>
+            <p>
+              Copyright © {new Date().getFullYear()} - All right reserved by{" "}
+              <a
+                href="https://facebook.com/ahsanulazimplabon"
+                className="link link-success link-hover"
+              >
+                Ahsanul Azim Plabon
+              </a>
+            </p>
+          </aside>
+        </footer>
+      </div>
     </footer>
   );
 };
