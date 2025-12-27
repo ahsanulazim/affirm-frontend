@@ -49,13 +49,12 @@ const UserForm = ({ login }: { login: boolean }) => {
           <input
             type="password"
             placeholder="Password"
-            minLength={8}
             {...register("password", {
               required: "Password is required",
-              minLength: {
-                value: 8,
-                message: "Password must be at least 8 characters",
-              },
+              ...(login ? {} : {minLength: {
+                    value: 8,
+                    message: "Password must be at least 8 characters",
+                  }}), 
             })}
           />
         </label>

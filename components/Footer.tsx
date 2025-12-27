@@ -70,7 +70,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className=" max-w-2lg mx-auto px-5">
-        <footer className="footer sm:footer-horizontal footer-center text-base-content py-5 border-t border-black/50">
+        <footer className="footer sm:footer-horizontal footer-center text-base-content py-5 border-t border-black/20">
           <aside>
             <p>
               Copyright © {new Date().getFullYear()} - All right reserved by{" "}
