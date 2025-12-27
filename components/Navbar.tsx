@@ -4,7 +4,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <header className="bg-base-100">
+    <header className="bg-base-200 sticky top-0 z-10">
       <div className="navbar max-w-2lg mx-auto px-5">
         <div className="navbar-start">
           <div className="flex-none lg:hidden">

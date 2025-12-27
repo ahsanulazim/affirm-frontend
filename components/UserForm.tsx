@@ -1,4 +1,5 @@
-import { SubmitHandler, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
 import { LuKey, LuMail } from "react-icons/lu";
 import { Link } from "react-router";
 
@@ -28,16 +29,7 @@ const UserForm = ({ login }: { login: boolean }) => {
         <label className="label">Email</label>
         <label className="input">
           <LuMail className="opacity-50" />
-          <input
-            type="email"
-            placeholder="mail@site.com"
-            {...register("email", {
-              required: "Email is required",
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: "Invalid email address",
-              },
-            })}
+          <input type="email" placeholder="mail@site.com" {...register("email", { required: "Email is required", pattern: {value: /^\S+@\S+$/i, message: "Invalid email address"}, })}
           />
         </label>
         {errors.email && (

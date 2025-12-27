@@ -20,19 +20,19 @@ const Footer = () => {
           <div>
             <a
               href="#"
-              className="btn btn-circle btn-outline btn-lg hover:btn-success"
+              className="btn btn-circle btn-lg hover:btn-success"
             >
               <FaFacebook />
             </a>
             <a
               href="#"
-              className="btn btn-circle btn-outline btn-lg hover:btn-success mx-3"
+              className="btn btn-circle btn-lg hover:btn-success mx-3"
             >
               <FaInstagram />
             </a>
             <a
               href="#"
-              className="btn btn-circle btn-outline btn-lg hover:btn-success"
+              className="btn btn-circle btn-lg hover:btn-success"
             >
               <FaLinkedin />
             </a>
