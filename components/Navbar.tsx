@@ -1,41 +1,41 @@
+import { Link } from "react-router";
 import Navitem from "./Navitem";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
-        <div className="flex-none lg:hidden">
-          <label
-            htmlFor="my-drawer-2"
-            aria-label="open sidebar"
-            className="btn btn-square btn-ghost"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block h-6 w-6 stroke-current"
+    <header className="bg-base-100">
+      <div className="navbar max-w-2lg mx-auto px-5">
+        <div className="navbar-start">
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-2"
+              aria-label="open sidebar"
+              className="btn btn-square btn-ghost"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </label>
+              <HiMenuAlt2 />
+            </label>
+          </div>
+          <Link to="/">
+            <img
+              className="max-w-40"
+              src="/assets/logo.webp"
+              alt="Affirm Logo"
+            />
+          </Link>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal font-semibold px-1">
+            <Navitem />
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <Link to="login">
+            <button className="btn btn-success">Login</button>
+          </Link>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <Navitem />
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
-    </div>
+    </header>
   );
 };
 
